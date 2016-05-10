@@ -8,8 +8,10 @@ namespace Testing
 {
     public class Mask
     {
+
         public void hideNumbers(string myString)
         {
+
             string sub1;
 
             // Assign all but last 4 chars of string to sub1
