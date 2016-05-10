@@ -41,6 +41,7 @@ namespace Testing
             num1 = Console.ReadLine();
             validate1(num1);
 
+            //Do not continue until user has entered valid input
             while (!valid1)
             {
                 validate1(checkNum1);
@@ -94,6 +95,8 @@ namespace Testing
 
         }
 
+        //Validation of input. String from 1 to 9 digits long containing only numbers.
+        //Consider refactoring so that each number entered uses the same validation method.
         private void validate1(string num)
         {
             var useable1 = Regex.Match(num, "^[0-9]{1,9}$");
